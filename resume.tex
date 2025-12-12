@@ -1,39 +1,33 @@
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt]{article} % <-- font size increased to 12pt
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{xcolor} % for blue links
+\usepackage{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref} % updated for blue links
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
 
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{charter}
 
+
+
+
+% ---------- Settings ----------
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -46,7 +40,6 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -56,7 +49,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -71,7 +63,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      #3 & #4 \\ % MODIFIED: Removed \textit{\small} from #3 and #4 to match the standard font of #2 (location/city)
+      #3 & #4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -98,6 +90,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -105,15 +98,31 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Neha Gaikwad} \\ \vspace{1pt}
+   {\Huge \scshape \textbf{Neha Gaikwad}} \\ \vspace{5pt}
+
+
     \small 
     +91 8591742120 $|$ \href{mailto:nehagaikwadwork24@gmail.com}{\underline{nehagaikwadwork24@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/neha-gaikwad-56449b347/}{\underline{linkedin.com/in/nehagaikwad}} $|$
+    \href{https://www.linkedin.com/in/nehagaikwadd/}{\underline{linkedin.com/in/nehagaikwadd}} $|$
     \href{https://github.com/NehaaGaikwad}{\underline{github.com/NehaaGaikwad}} \vspace{-8pt}
 \end{center}
 
+\vspace{3pt}  
+
+\section{\bfseries About Me}
+\vspace{1pt}  
+\resumeItemListStart
+    \resumeItem{Computer Engineering student at Vidyalankar Institute of Technology (CGPA: 9.9) with strong skills in Java, C, Python, HTML, and CSS. Proficient in problem-solving, debugging, and software development, with proven abilities in communication, leadership, and teamwork. Eager to apply technical expertise and soft skills to contribute effectively in a professional environment.}
+\resumeItemListEnd
+\vspace{-15pt}
+
+\vspace{3pt}
+
+
+
+
 %-----------EDUCATION-----------
-\section{Education}
+\section{\bfseries Education}
 \resumeSubHeadingListStart
 
     \resumeSubheading
@@ -125,28 +134,31 @@
     \resumeItemListEnd
 
     \resumeSubheading
-        {Arya Gurukul (CBSE Board)}{Kalyan, India}
-        {Class X}{2022}
-    \resumeItemListStart
-        \resumeItem{Percentage: \textbf{95\%}}
-    \resumeItemListEnd
-
-    \resumeSubheading
         {R.T.P College (State Board)}{Dombivli, India}
         {Class XII}{2024}
     \resumeItemListStart
         \resumeItem{Percentage: \textbf{81.83\%}}
     \resumeItemListEnd
 
+    \resumeSubheading
+        {Arya Gurukul (CBSE Board)}{Kalyan, India}
+        {Class X}{2022}
+    \resumeItemListStart
+        \resumeItem{Percentage: \textbf{95\%}}
+    \resumeItemListEnd
+
+
+
 \resumeSubHeadingListEnd
 \vspace{-15pt}
 
 % -----------EXTRACURRICULAR ACTIVITY-----------
-\section{Extracurricular Activity}
+\section{\bfseries Experience}
 \resumeSubHeadingListStart
 
     \resumeSubheading
-        {Open Source Contributions}{Open World Holidays Framework}{Contributor}{2025}
+        {Open Source Contributions} {2025}
+        {\bfseries Open World Holidays Framework}{}
     \resumeItemListStart
         \resumeItem{Translated \textbf{Nepali and Bangladeshi holidays} for all public holidays, ensuring \textbf{correct regional names}.}
         \resumeItem{Maintained \textbf{tests} and collaborated with \textbf{global maintainers} to ensure proper integration and consistency.}
@@ -157,7 +169,7 @@
 \vspace{-15pt}
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{\bfseries Projects}
 \vspace{-4pt} % small gap before first project
 \resumeSubHeadingListStart
 
@@ -179,16 +191,6 @@
     \resumeItem{Implemented dynamic targets with \textbf{growing/shrinking mechanics}, scoring, and limited lives.}
     \resumeItem{Displayed real-time statistics: \textbf{hits, accuracy, speed, and elapsed time} in a clean UI.}
 \resumeItemListEnd
-\vspace{5pt} % small gap after project
-
-\resumeProjectHeading
-    {\textbf{\normalsize{Turtle Race Game}} $|$ \emph{Python, Turtle}}%
-    {\href{https://github.com/NehaaGaikwad/Turtle-Race}{\underline{GitHub}}}
-\resumeItemListStart
-    \resumeItem{Built an interactive \textbf{Python Turtle racing game} with 2–10 customizable racers.}
-    \resumeItem{Implemented random movement mechanics to simulate racing and determine the winner dynamically.}
-    \resumeItem{Designed a visual interface using \textbf{Turtle graphics} with multiple colored racers and race track.}
-    \resumeItemListEnd
 \vspace{5pt} % small gap after project
 
 \resumeProjectHeading
@@ -216,7 +218,7 @@
 \resumeSubHeadingListEnd
 
 % -----------SKILLS-----------
-\section{Skills}
+\section{\bfseries Skills}
 \vspace{-2pt}
 \begin{itemize}[leftmargin=0.2in, label={}]
     \item{
