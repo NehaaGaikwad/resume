@@ -71,7 +71,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      #3 & #4 \\ % MODIFIED: Removed \textit{\small} from #3 and #4 to match the standard font of #2 (location/city)
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -118,7 +118,7 @@
 
     \resumeSubheading
         {Vidyalankar Institute of Technology}{Mumbai, India}
-        {Bachelor of Technology in Computer Engineering}{Sept 2024 -- Present}
+        {Bachelor of Technology in Computer Engineering}{Sept 2024 -- Present} % REMOVED \normalsize
     \resumeItemListStart
         \resumeItem{CGPA: \textbf{9.9} (First Year), SGPA: \textbf{10.0} (Sem 3)}
         \resumeItem{Expected Graduation: \textbf{2028}}
@@ -188,7 +188,7 @@
     \resumeItem{Built an interactive \textbf{Python Turtle racing game} with 2–10 customizable racers.}
     \resumeItem{Implemented random movement mechanics to simulate racing and determine the winner dynamically.}
     \resumeItem{Designed a visual interface using \textbf{Turtle graphics} with multiple colored racers and race track.}
-\resumeItemListEnd
+    \resumeItemListEnd
 \vspace{5pt} % small gap after project
 
 \resumeProjectHeading
