@@ -12,14 +12,14 @@
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor} % for blue links
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref} % updated for blue links
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -31,7 +31,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -102,23 +101,16 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Neha Gaikwad} \\ \vspace{1pt}
     \small 
-    +91 8591742120 $|$ \href{mailto:nehagaikwadwork24@gmail.com}{\underline{nehagaikwadwork24@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/neha-gaikwad-56449b347/}{\underline{linkedin.com/in/nehagaikwad}} $|$
-    \href{https://github.com/NehaaGaikwad}{\underline{https://github.com/NehaaGaikwad}} \vspace{-8pt}
+    +91 8591742120 $|$ \href{mailto:nehagaikwadwork24@gmail.com}{nehagaikwadwork24@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/neha-gaikwad-56449b347/}{linkedin.com/in/nehagaikwad} $|$
+    \href{https://github.com/NehaaGaikwad}{github.com/NehaaGaikwad} \vspace{-8pt}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -149,8 +141,20 @@
 \resumeSubHeadingListEnd
 \vspace{-15pt}
 
+% -----------EXTRACURRICULAR ACTIVITY-----------
+\section{Extracurricular Activity}
+\resumeSubHeadingListStart
 
+    \resumeSubheading
+        {Open Source Contributions}{Open World Holidays Framework}{Contributor}{2025}
+    \resumeItemListStart
+        \resumeItem{Translated \textbf{Nepali and Bangladeshi holidays} for all public holidays, ensuring \textbf{correct regional names}.}
+        \resumeItem{Maintained \textbf{tests} and collaborated with \textbf{global maintainers} to ensure proper integration and consistency.}
+        \resumeItem{Gained hands-on experience with \textbf{Git, pull requests, code reviews}, and contributing to a widely used \textbf{open-source project}.}
+    \resumeItemListEnd
 
+\resumeSubHeadingListEnd
+\vspace{-15pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -159,7 +163,7 @@
 
 \resumeProjectHeading
     {\textbf{\normalsize{Weather Forecast Application}} $|$ \emph{Python, Tkinter, OpenWeather API, Geopy, TimezoneFinder}}%
-    {\href{https://github.com/NehaaGaikwad/Weather-Forecast}{\underline{GitHub}}}
+    {\href{https://github.com/NehaaGaikwad/Weather-Forecast}{GitHub}}
 \resumeItemListStart
     \resumeItem{Developed a \textbf{Tkinter-based weather app} showing real-time weather and 5-day forecasts worldwide.}
     \resumeItem{Integrated \textbf{geolocation} and \textbf{timezone detection} for accurate local time and coordinates.}
@@ -169,7 +173,7 @@
 
 \resumeProjectHeading
     {\textbf{\normalsize{Aim Trainer Game}} $|$ \emph{Python, Pygame}}%
-    {\href{https://github.com/NehaaGaikwad/Aim-Trainer}{\underline{GitHub}}}
+    {\href{https://github.com/NehaaGaikwad/Aim-Trainer}{GitHub}}
 \resumeItemListStart
     \resumeItem{Developed a \textbf{Pygame-based aim trainer} to improve reaction time and targeting skills.}
     \resumeItem{Implemented dynamic targets with \textbf{growing/shrinking mechanics}, scoring, and limited lives.}
@@ -179,7 +183,7 @@
 
 \resumeProjectHeading
     {\textbf{\normalsize{Turtle Race Game}} $|$ \emph{Python, Turtle}}%
-    {\href{https://github.com/NehaaGaikwad/Turtle-Race}{\underline{GitHub}}}
+    {\href{https://github.com/NehaaGaikwad/Turtle-Race}{GitHub}}
 \resumeItemListStart
     \resumeItem{Built an interactive \textbf{Python Turtle racing game} with 2–10 customizable racers.}
     \resumeItem{Implemented random movement mechanics to simulate racing and determine the winner dynamically.}
@@ -189,7 +193,7 @@
 
 \resumeProjectHeading
     {\textbf{\normalsize{QR Code Generator}} $|$ \emph{Python, Flask, qrcode, HTML}}%
-    {\href{https://github.com/NehaaGaikwad/QR_Code-Generator}{\underline{GitHub}}}
+    {\href{https://github.com/NehaaGaikwad/QR_Code-Generator}{GitHub}}
 \resumeItemListStart
     \resumeItem{Developed a \textbf{Flask-based web application} to generate QR codes from user-provided links.}
     \resumeItem{Used \textbf{qrcode} and \textbf{BytesIO} to create QR code images dynamically in memory.}
@@ -199,7 +203,7 @@
 
 \resumeProjectHeading
     {\textbf{\normalsize{Amazon Clone Homepage}} $|$ \emph{HTML, CSS, Font Awesome}}%
-    {\href{https://github.com/NehaaGaikwad/Amazon-clone}{\underline{GitHub}}}
+    {\href{https://github.com/NehaaGaikwad/Amazon-clone}{GitHub}}
 \resumeItemListStart
     \resumeItem{Built a \textbf{static Amazon homepage clone} to practice layout design using only HTML and CSS.}
     \resumeItem{Implemented \textbf{navbar, hero section, product boxes, and footer} with clean grid layout.}
@@ -210,18 +214,7 @@
 \vspace{5pt} % small gap after project
 
 \resumeSubHeadingListEnd
-\vspace{10pt} % extra space after entire section
 
-
-
-
-
-
-
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
 % -----------SKILLS-----------
 \section{Skills}
 \vspace{-2pt}
@@ -230,12 +223,9 @@
         \begin{tabular}{ l@{\hskip 0.3in} l }
             \textbf{Languages} : C, Python, Java, MySQL, HTML, CSS \\
             \textbf{Developer Tools} : Git, GitHub, VS Code \\
-
         \end{tabular}
     }
 \end{itemize}
-
-
 
 %-------------------------------------------
 \end{document}
